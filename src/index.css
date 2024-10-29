@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+    @apply text-neutral-grayishblue text-base font-medium
+}
+
+.left-list {
+    @apply flex flex-col border-b-2 border-b-neutral-grayishblue pb-4 pt-2
+}
+
+.left-h {
+    @apply text-neutral-offwhite text-xl font-semibold hover:text-primary-softorange
+}
+
+.left-p {
+    @apply text-neutral-grayishblue text-base font-light
+}
+
+.foot-num {
+    @apply text-neutral-grayishblue text-3xl font-medium
+}
+
+.foot-p {
+    @apply text-neutral-vdarkblue text-lg font-bold hover:text-primary-softred
+}
+
+.foot-det {
+    @apply text-neutral-dgrayishblue text-sm font-bold
+}
+
+.mobile-menu {
+    @apply text-neutral-vdarkblue text-lg font-bold
+}
