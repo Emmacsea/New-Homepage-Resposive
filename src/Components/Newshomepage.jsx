@@ -17,11 +17,11 @@ export const Newhomepage = () => {
     }
 
     return (
-        <div className="bg-neutral-offwhite h-screen w-full px-28">
+        <div className="bg-neutral-offwhite md:h-screen h-full md:px-28 px-3">
             <div className="w-full flex flex-col justify-center items-center ">
                 <header className="flex justify-between itemms-center w-full mt-7">
-                    <div><img src={logo} alt="" /></div>
-                    <button type="click" onClick={handleMenu} className="md:hidden">
+                    <div><img className="md:w-full w-11" src={logo} alt="" /></div>
+                    <button type="click" onClick={handleMenu} className="md:hidden block">
                         <img src={menu ? menuclose : menubarz} alt="" />
                     </button>
                     {menu && (
@@ -30,14 +30,14 @@ export const Newhomepage = () => {
                         <img src={menuclose} alt="" />
                     </button>
 
-                            <ul className="flex flex-col space-y-4 pt-14">
+                    <ul className="flex flex-col space-y-4 pt-14">
                         <li className="mobile-menu"><a href="">Home</a></li>
                         <li className="mobile-menu"><a href="">New</a></li>
                         <li className="mobile-menu"><a href="">Popular</a></li>
                         <li className="mobile-menu"><a href="">Trending</a></li>
                         <li className="mobile-menu"><a href="">Categories</a></li>
                     </ul>
-                        </div>
+                    </div>
                         
                     )}
                     <ul className="hidden md:flex space-x-6 items-center">
@@ -56,7 +56,7 @@ export const Newhomepage = () => {
                             <div><img className="h-48 w-full hidden md:block " src={desktopweb} alt="" /></div>
                             <div><img className="h-48 w-full md:hidden" src={mobileweb} alt="" /></div>
                             <div className="flex md:flex-row flex-col space-y-3 md:space-x-4 items-start w-full">
-                                <h3 className="text-neutral-vdarkblue text-4xl font-bold capitalize md:mt-0 mt-2 break-words">The bright future of web 3.0?</h3>
+                                <h3 className="text-neutral-vdarkblue md:text-4xl text-5xl font-bold capitalize md:mt-0 mt-3 break-normal ">The bright future of web 3.0?</h3>
                                 <div className="md:space-y-0 space-y-3">
                                     <p className="text-neutral-dgrayishblue text-base font-semilight break-words">
                                         We dive into the next evolution of the web that 
@@ -72,7 +72,7 @@ export const Newhomepage = () => {
 
                         </div>
 
-                        <div className="bg-neutral-vdarkblue h-full py-3 px-5 md:w-1/3 w-full md:mt-0 mt-32">
+                        <div className="bg-neutral-vdarkblue md:h-full h-auto py-3 px-5 md:w-1/3 w-full md:mt-0 mt-60">
                             <h2 className="text-primary-softorange text-2xl font-bold">New</h2>
                             <div className="">
                                 <div className="left-list">
@@ -102,9 +102,9 @@ export const Newhomepage = () => {
                     </section>
                 </main>
 
-                <footer className="flex md:flex-row flex-col justify-between md:items-start md:w-full md:mt-14 md:space-y-0 space-y-4 w-full mt-24">
+                <footer className="flex md:flex-row flex-col justify-between md:items-start md:w-full md:mt-14 md:space-y-0 space-y-6 w-full md:pt-0 md:pb-0 pt-64 pb-10">
                     <div className="flex space-x-3 items-center">
-                        <div><img className="w-20 h-28" src={retro} alt="" /></div>
+                        <div><img className="md:w-20 w-32 h-28" src={retro} alt="" /></div>
                         <div className="flex flex-col space-y-1">
                             <h1 className="foot-num">01</h1>
                             <p className="foot-p">Reviving Retro PCs</p>
@@ -115,7 +115,7 @@ export const Newhomepage = () => {
                     </div>
 
                     <div className="flex space-x-3 items-center">
-                        <div><img className="w-20 h-28" src={laptop} alt="" /></div>
+                        <div><img className="md:w-20 w-24 h-28" src={laptop} alt="" /></div>
                         <div className="flex flex-col space-y-1">
                             <h1 className="foot-num">02</h1>
                             <p className="foot-p">Top 10 Laptops of 2022</p>
@@ -126,7 +126,7 @@ export const Newhomepage = () => {
                     </div>
 
                     <div className="flex space-x-3 items-center ">
-                        <div><img className="w-20 h-28" src={gaming} alt="" /></div>
+                        <div><img className="md:w-20 w-28 h-28" src={gaming} alt="" /></div>
                         <div className="flex flex-col space-y-1">
                             <h1 className="foot-num">03</h1>
                             <p className="foot-p">The Growth of Gaming</p>
